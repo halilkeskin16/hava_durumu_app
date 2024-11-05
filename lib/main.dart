@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hava_durumu_app/screens/home_page.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() {
+void main() async {
+  await dotenv.load();
   runApp(const MyApp());
 }
 
