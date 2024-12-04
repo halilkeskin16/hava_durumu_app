@@ -30,7 +30,7 @@ class WeatherServices {
     final String url =
         'https://api.collectapi.com/weather/getWeather?data.lang=tr&data.city=$city';
     final String apiKey =
-        dotenv.env['API_KEY']!; // API_KEY'i .env dosyasından al
+        dotenv.env['API_KEY']!;
     final Map<String, dynamic> header = {
       'authorization': 'apikey $apiKey',
       'content-type': 'application/json'
